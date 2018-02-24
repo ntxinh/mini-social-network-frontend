@@ -53,16 +53,13 @@ class Dashboard extends React.Component{
                 {/* Body */}
                 <ItemGrid xs={12} sm={12} md={12}>
                     <RegularCard
-                        cardTitle="Edit Profile"
-                        cardSubtitle="Complete your profile"
                         content={
                             <div>
                                 <Grid container>
                                     <ItemGrid xs={12} sm={12} md={6}>
 
                                     <RegularCard
-                                            cardTitle="Edit Profile"
-                                            cardSubtitle="Complete your profile"
+                                            cardTitle="Intro"
                                             content={
                                                 <div>
                                                     <Grid container>
@@ -98,15 +95,11 @@ class Dashboard extends React.Component{
                                                         </ItemGrid>
                                                     </Grid>
                                                 </div>
-                                            }
-                                            footer={
-                                                <Button color="primary">Update Profile</Button>
                                             }
                                         />
 
                                         <RegularCard
-                                            cardTitle="Edit Profile"
-                                            cardSubtitle="Complete your profile"
+                                            cardTitle="Friends"
                                             content={
                                                 <div>
                                                     <Grid container>
@@ -142,9 +135,6 @@ class Dashboard extends React.Component{
                                                         </ItemGrid>
                                                     </Grid>
                                                 </div>
-                                            }
-                                            footer={
-                                                <Button color="primary">Update Profile</Button>
                                             }
                                         />
 
@@ -152,8 +142,7 @@ class Dashboard extends React.Component{
                                     <ItemGrid xs={12} sm={12} md={6}>
 
                                         <RegularCard
-                                            cardTitle="Edit Profile"
-                                            cardSubtitle="Complete your profile"
+                                            cardTitle="Make Post"
                                             content={
                                                 <div>
                                                     <Grid container>
@@ -196,8 +185,7 @@ class Dashboard extends React.Component{
                                         />
 
                                         <RegularCard
-                                            cardTitle="Edit Profile"
-                                            cardSubtitle="Complete your profile"
+                                            cardTitle="Post 1"
                                             content={
                                                 <div>
                                                     <Grid container>
@@ -234,27 +222,8 @@ class Dashboard extends React.Component{
                                                     </Grid>
                                                 </div>
                                             }
-                                            footer={
-                                                <Button color="primary">Update Profile</Button>
-                                            }
                                         />
 
-                                    </ItemGrid>
-                                </Grid>
-                            </div>
-                        }
-                    />
-                </ItemGrid>
-
-                <ItemGrid xs={12} sm={12} md={12}>
-                    <RegularCard
-                        cardTitle="Edit Profile"
-                        cardSubtitle="Complete your profile"
-                        content={
-                            <div>
-                                <Grid container>
-                                    <ItemGrid xs={12} sm={12} md={6}>
-                                        <InputLabel style={{color: '#AAAAAA'}}>About me</InputLabel>
                                     </ItemGrid>
                                 </Grid>
                             </div>
