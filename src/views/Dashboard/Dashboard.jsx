@@ -43,158 +43,153 @@ class Dashboard extends React.Component{
                     />
                 </ItemGrid>
                 {/* Body */}
-                <ItemGrid xs={12} sm={12} md={12}>
-                    <RegularCard
-                        content={
-                            <div>
-                                <Grid container>
-                                    <ItemGrid xs={12} sm={12} md={6}>
 
-                                    <RegularCard
-                                            cardTitle="Intro"
-                                            content={
-                                                <div>
-                                                    <Grid container>
-                                                        <ItemGrid xs={12} sm={12} md={12}>
-                                                            <InputLabel style={{color: '#AAAAAA'}}>Quote: </InputLabel>
-                                                        </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={12}>
-                                                            <InputLabel style={{color: '#AAAAAA'}}>Studied at: </InputLabel>
-                                                        </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={12}>
-                                                            <InputLabel style={{color: '#AAAAAA'}}>Lives in: </InputLabel>
-                                                        </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={12}>
-                                                            <InputLabel style={{color: '#AAAAAA'}}>Single: </InputLabel>
-                                                        </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={12}>
-                                                            <InputLabel style={{color: '#AAAAAA'}}>Followed by: </InputLabel>
-                                                        </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={12}>
-                                                            <InputLabel style={{color: '#AAAAAA'}}>GitHub: </InputLabel>
-                                                        </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={12}>
-                                                            <InputLabel style={{color: '#AAAAAA'}}>LinkedIn: </InputLabel>
-                                                        </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={12}>
-                                                            <InputLabel style={{color: '#AAAAAA'}}>Twitter: </InputLabel>
-                                                        </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={12}>
-                                                            <InputLabel style={{color: '#AAAAAA'}}>Website: </InputLabel>
-                                                        </ItemGrid>
-                                                    </Grid>
-                                                </div>
-                                            }
-                                        />
+                <Grid container>
+                    <ItemGrid xs={12} sm={12} md={6}>
 
-                                        <RegularCard
-                                            cardTitle="Friends"
-                                            content={
-                                                <div>
-                                                    <Grid container>
-                                                        <ItemGrid xs={12} sm={12} md={4}>
-                                                            <StatsCard
-                                                                icon={ContentCopy}
-                                                                iconColor="orange"
-                                                                title="Used Space"
-                                                                description="49/50"
-                                                                statIcon={Warning}
-                                                                statText="Tracked from Github"
-                                                            />
-                                                        </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={4}>
-                                                            <StatsCard
-                                                                icon={InfoOutline}
-                                                                iconColor="red"
-                                                                title="Fixed Issues"
-                                                                description="75"
-                                                                statIcon={LocalOffer}
-                                                                statText="Tracked from Github"
-                                                            />
-                                                        </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={4}>
-                                                            <StatsCard
-                                                                icon={ContentCopy}
-                                                                iconColor="orange"
-                                                                title="Used Space"
-                                                                description="49/50"
-                                                                statIcon={Warning}
-                                                                statText="Tracked from Github"
-                                                            />
-                                                        </ItemGrid>
-                                                    </Grid>
-                                                </div>
-                                            }
-                                        />
+                        <RegularCard
+                            cardTitle="Intro"
+                            content={
+                                <div>
+                                    <Grid container>
+                                        <ItemGrid xs={12} sm={12} md={12}>
+                                            <InputLabel style={{color: '#AAAAAA'}}>Quote: </InputLabel>
+                                        </ItemGrid>
+                                        <ItemGrid xs={12} sm={12} md={12}>
+                                            <InputLabel style={{color: '#AAAAAA'}}>Studied at: </InputLabel>
+                                        </ItemGrid>
+                                        <ItemGrid xs={12} sm={12} md={12}>
+                                            <InputLabel style={{color: '#AAAAAA'}}>Lives in: </InputLabel>
+                                        </ItemGrid>
+                                        <ItemGrid xs={12} sm={12} md={12}>
+                                            <InputLabel style={{color: '#AAAAAA'}}>Single: </InputLabel>
+                                        </ItemGrid>
+                                        <ItemGrid xs={12} sm={12} md={12}>
+                                            <InputLabel style={{color: '#AAAAAA'}}>Followed by: </InputLabel>
+                                        </ItemGrid>
+                                        <ItemGrid xs={12} sm={12} md={12}>
+                                            <InputLabel style={{color: '#AAAAAA'}}>GitHub: </InputLabel>
+                                        </ItemGrid>
+                                        <ItemGrid xs={12} sm={12} md={12}>
+                                            <InputLabel style={{color: '#AAAAAA'}}>LinkedIn: </InputLabel>
+                                        </ItemGrid>
+                                        <ItemGrid xs={12} sm={12} md={12}>
+                                            <InputLabel style={{color: '#AAAAAA'}}>Twitter: </InputLabel>
+                                        </ItemGrid>
+                                        <ItemGrid xs={12} sm={12} md={12}>
+                                            <InputLabel style={{color: '#AAAAAA'}}>Website: </InputLabel>
+                                        </ItemGrid>
+                                    </Grid>
+                                </div>
+                            }
+                        />
 
-                                    </ItemGrid>
-                                    <ItemGrid xs={12} sm={12} md={6}>
+                        <RegularCard
+                            cardTitle="Friends"
+                            content={
+                                <div>
+                                    <Grid container>
+                                        <ItemGrid xs={12} sm={12} md={4}>
+                                            <StatsCard
+                                                icon={ContentCopy}
+                                                iconColor="orange"
+                                                title="Used Space"
+                                                description="49/50"
+                                                statIcon={Warning}
+                                                statText="Tracked from Github"
+                                            />
+                                        </ItemGrid>
+                                        <ItemGrid xs={12} sm={12} md={4}>
+                                            <StatsCard
+                                                icon={InfoOutline}
+                                                iconColor="red"
+                                                title="Fixed Issues"
+                                                description="75"
+                                                statIcon={LocalOffer}
+                                                statText="Tracked from Github"
+                                            />
+                                        </ItemGrid>
+                                        <ItemGrid xs={12} sm={12} md={4}>
+                                            <StatsCard
+                                                icon={ContentCopy}
+                                                iconColor="orange"
+                                                title="Used Space"
+                                                description="49/50"
+                                                statIcon={Warning}
+                                                statText="Tracked from Github"
+                                            />
+                                        </ItemGrid>
+                                    </Grid>
+                                </div>
+                            }
+                        />
 
-                                        <RegularCard
-                                            cardTitle="Make Post"
-                                            content={
-                                                <div>
-                                                    <Grid container>
-                                                        <ItemGrid xs={12} sm={12} md={12}>
-                                                            <CustomInput
-                                                                labelText="What's on your mind?"
-                                                                id="company-disabled"
-                                                                formControlProps={{
-                                                                    fullWidth: true
-                                                                }}
-                                                                inputProps={{
-                                                                    disabled: true
-                                                                }}
-                                                            />
-                                                        </ItemGrid>
-                                                    </Grid>
-                                                </div>
-                                            }
-                                            footer={
-                                                <Button color="primary">Post</Button>
-                                            }
-                                        />
+                    </ItemGrid>
 
-                                        <RegularCard
-                                            cardTitle="Alec Thompson - Feb/12/2018"
-                                            content={
-                                                <div>
-                                                    <Grid container>
-                                                        <ItemGrid xs={12} sm={12} md={12}>
-                                                            <InputLabel style={{color: '#AAAAAA'}}>This is my second post!</InputLabel>
-                                                        </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={12}>
-                                                            <Button color="primary">Like</Button>
-                                                            <Button color="primary">Comment</Button>
-                                                        </ItemGrid>
-                                                    </Grid>
-                                                </div>
-                                            }
-                                        />
+                    <ItemGrid xs={12} sm={12} md={6}>
 
-                                        <RegularCard
-                                            cardTitle="Alec Thompson - Feb/10/2018"
-                                            content={
-                                                <div>
-                                                    <Grid container>
-                                                        <ItemGrid xs={12} sm={12} md={12}>
-                                                            <InputLabel style={{color: '#AAAAAA'}}>This is my first post!</InputLabel>
-                                                        </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={12}>
-                                                            <Button color="primary">Like</Button>
-                                                            <Button color="primary">Comment</Button>
-                                                        </ItemGrid>
-                                                    </Grid>
-                                                </div>
-                                            }
-                                        />
+                        <RegularCard
+                            cardTitle="Make Post"
+                            content={
+                                <div>
+                                    <Grid container>
+                                        <ItemGrid xs={12} sm={12} md={12}>
+                                            <CustomInput
+                                                labelText="What's on your mind?"
+                                                id="company-disabled"
+                                                formControlProps={{
+                                                    fullWidth: true
+                                                }}
+                                                inputProps={{
+                                                    disabled: true
+                                                }}
+                                            />
+                                        </ItemGrid>
+                                    </Grid>
+                                </div>
+                            }
+                            footer={
+                                <Button color="primary">Post</Button>
+                            }
+                        />
 
-                                    </ItemGrid>
-                                </Grid>
-                            </div>
-                        }
-                    />
-                </ItemGrid>
+                        <RegularCard
+                            cardTitle="Alec Thompson - Feb/12/2018"
+                            content={
+                                <div>
+                                    <Grid container>
+                                        <ItemGrid xs={12} sm={12} md={12}>
+                                            <InputLabel style={{color: '#AAAAAA'}}>This is my second post!</InputLabel>
+                                        </ItemGrid>
+                                        <ItemGrid xs={12} sm={12} md={12}>
+                                            <Button color="primary">Like</Button>
+                                            <Button color="primary">Comment</Button>
+                                        </ItemGrid>
+                                    </Grid>
+                                </div>
+                            }
+                        />
+
+                        <RegularCard
+                            cardTitle="Alec Thompson - Feb/10/2018"
+                            content={
+                                <div>
+                                    <Grid container>
+                                        <ItemGrid xs={12} sm={12} md={12}>
+                                            <InputLabel style={{color: '#AAAAAA'}}>This is my first post!</InputLabel>
+                                        </ItemGrid>
+                                        <ItemGrid xs={12} sm={12} md={12}>
+                                            <Button color="primary">Like</Button>
+                                            <Button color="primary">Comment</Button>
+                                        </ItemGrid>
+                                    </Grid>
+                                </div>
+                            }
+                        />
+
+                    </ItemGrid>
+                </Grid>
+
             </Grid>
         </div>
         );
