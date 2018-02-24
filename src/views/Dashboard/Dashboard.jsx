@@ -42,11 +42,12 @@ class Dashboard extends React.Component{
                         }
                     />
                 </ItemGrid>
-                {/* Body */}
 
+                {/* Body */}
                 <Grid container>
                     <ItemGrid xs={12} sm={12} md={6}>
 
+                        {/* Intro */}
                         <RegularCard
                             cardTitle="Intro"
                             content={
@@ -84,6 +85,7 @@ class Dashboard extends React.Component{
                             }
                         />
 
+                        {/* Friends */}
                         <RegularCard
                             cardTitle="Friends"
                             content={
@@ -128,6 +130,7 @@ class Dashboard extends React.Component{
 
                     <ItemGrid xs={12} sm={12} md={6}>
 
+                        {/* Make Post */}
                         <RegularCard
                             cardTitle="Make Post"
                             content={
@@ -153,6 +156,7 @@ class Dashboard extends React.Component{
                             }
                         />
 
+                        {/* Posts */}
                         <RegularCard
                             cardTitle="Alec Thompson - Feb/12/2018"
                             content={
