@@ -3,21 +3,13 @@ import {
     withStyles, Grid, InputLabel
 } from 'material-ui';
 import {
-    ContentCopy, Store, InfoOutline, Warning, DateRange, LocalOffer, Update, ArrowUpward, AccessTime, Accessibility
+    ContentCopy, InfoOutline, Warning, LocalOffer
 } from 'material-ui-icons';
 import PropTypes from 'prop-types';
-// react plugin for creating charts
-import ChartistGraph from 'react-chartist';
 
 import {
-    StatsCard, ChartCard, TasksCard, RegularCard, Table, ItemGrid, ProfileCard, Button, CustomInput
+    StatsCard, RegularCard, ItemGrid, ProfileCard, Button, CustomInput
 } from 'components';
-
-import {
-    dailySalesChart ,
-    emailsSubscriptionChart,
-    completedTasksChart
-} from 'variables/charts';
 
 import { dashboardStyle } from 'variables/styles';
 
@@ -46,7 +38,7 @@ class Dashboard extends React.Component{
                         title="Alec Thompson"
                         description="Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is..."
                         footer={
-                            <Button color="primary" round>Follow</Button>
+                            <Button color="primary" round>Add Friend</Button>
                         }
                     />
                 </ItemGrid>
@@ -63,35 +55,32 @@ class Dashboard extends React.Component{
                                             content={
                                                 <div>
                                                     <Grid container>
-                                                        <ItemGrid xs={12} sm={12} md={5}>
-                                                            <CustomInput
-                                                                labelText="Company (disabled)"
-                                                                id="company-disabled"
-                                                                formControlProps={{
-                                                                    fullWidth: true
-                                                                }}
-                                                                inputProps={{
-                                                                    disabled: true
-                                                                }}
-                                                            />
+                                                        <ItemGrid xs={12} sm={12} md={12}>
+                                                            <InputLabel style={{color: '#AAAAAA'}}>Quote: </InputLabel>
                                                         </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={3}>
-                                                            <CustomInput
-                                                                labelText="Username"
-                                                                id="username"
-                                                                formControlProps={{
-                                                                    fullWidth: true
-                                                                }}
-                                                            />
+                                                        <ItemGrid xs={12} sm={12} md={12}>
+                                                            <InputLabel style={{color: '#AAAAAA'}}>Studied at: </InputLabel>
                                                         </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={4}>
-                                                            <CustomInput
-                                                                labelText="Email address"
-                                                                id="email-address"
-                                                                formControlProps={{
-                                                                    fullWidth: true
-                                                                }}
-                                                            />
+                                                        <ItemGrid xs={12} sm={12} md={12}>
+                                                            <InputLabel style={{color: '#AAAAAA'}}>Lives in: </InputLabel>
+                                                        </ItemGrid>
+                                                        <ItemGrid xs={12} sm={12} md={12}>
+                                                            <InputLabel style={{color: '#AAAAAA'}}>Single: </InputLabel>
+                                                        </ItemGrid>
+                                                        <ItemGrid xs={12} sm={12} md={12}>
+                                                            <InputLabel style={{color: '#AAAAAA'}}>Followed by: </InputLabel>
+                                                        </ItemGrid>
+                                                        <ItemGrid xs={12} sm={12} md={12}>
+                                                            <InputLabel style={{color: '#AAAAAA'}}>GitHub: </InputLabel>
+                                                        </ItemGrid>
+                                                        <ItemGrid xs={12} sm={12} md={12}>
+                                                            <InputLabel style={{color: '#AAAAAA'}}>LinkedIn: </InputLabel>
+                                                        </ItemGrid>
+                                                        <ItemGrid xs={12} sm={12} md={12}>
+                                                            <InputLabel style={{color: '#AAAAAA'}}>Twitter: </InputLabel>
+                                                        </ItemGrid>
+                                                        <ItemGrid xs={12} sm={12} md={12}>
+                                                            <InputLabel style={{color: '#AAAAAA'}}>Website: </InputLabel>
                                                         </ItemGrid>
                                                     </Grid>
                                                 </div>
@@ -103,34 +92,34 @@ class Dashboard extends React.Component{
                                             content={
                                                 <div>
                                                     <Grid container>
-                                                        <ItemGrid xs={12} sm={12} md={5}>
-                                                            <CustomInput
-                                                                labelText="Company (disabled)"
-                                                                id="company-disabled"
-                                                                formControlProps={{
-                                                                    fullWidth: true
-                                                                }}
-                                                                inputProps={{
-                                                                    disabled: true
-                                                                }}
-                                                            />
-                                                        </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={3}>
-                                                            <CustomInput
-                                                                labelText="Username"
-                                                                id="username"
-                                                                formControlProps={{
-                                                                    fullWidth: true
-                                                                }}
+                                                        <ItemGrid xs={12} sm={12} md={4}>
+                                                            <StatsCard
+                                                                icon={ContentCopy}
+                                                                iconColor="orange"
+                                                                title="Used Space"
+                                                                description="49/50"
+                                                                statIcon={Warning}
+                                                                statText="Tracked from Github"
                                                             />
                                                         </ItemGrid>
                                                         <ItemGrid xs={12} sm={12} md={4}>
-                                                            <CustomInput
-                                                                labelText="Email address"
-                                                                id="email-address"
-                                                                formControlProps={{
-                                                                    fullWidth: true
-                                                                }}
+                                                            <StatsCard
+                                                                icon={InfoOutline}
+                                                                iconColor="red"
+                                                                title="Fixed Issues"
+                                                                description="75"
+                                                                statIcon={LocalOffer}
+                                                                statText="Tracked from Github"
+                                                            />
+                                                        </ItemGrid>
+                                                        <ItemGrid xs={12} sm={12} md={4}>
+                                                            <StatsCard
+                                                                icon={ContentCopy}
+                                                                iconColor="orange"
+                                                                title="Used Space"
+                                                                description="49/50"
+                                                                statIcon={Warning}
+                                                                statText="Tracked from Github"
                                                             />
                                                         </ItemGrid>
                                                     </Grid>
@@ -146,33 +135,15 @@ class Dashboard extends React.Component{
                                             content={
                                                 <div>
                                                     <Grid container>
-                                                        <ItemGrid xs={12} sm={12} md={5}>
+                                                        <ItemGrid xs={12} sm={12} md={12}>
                                                             <CustomInput
-                                                                labelText="Company (disabled)"
+                                                                labelText="What's on your mind?"
                                                                 id="company-disabled"
                                                                 formControlProps={{
                                                                     fullWidth: true
                                                                 }}
                                                                 inputProps={{
                                                                     disabled: true
-                                                                }}
-                                                            />
-                                                        </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={3}>
-                                                            <CustomInput
-                                                                labelText="Username"
-                                                                id="username"
-                                                                formControlProps={{
-                                                                    fullWidth: true
-                                                                }}
-                                                            />
-                                                        </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={4}>
-                                                            <CustomInput
-                                                                labelText="Email address"
-                                                                id="email-address"
-                                                                formControlProps={{
-                                                                    fullWidth: true
                                                                 }}
                                                             />
                                                         </ItemGrid>
@@ -180,44 +151,38 @@ class Dashboard extends React.Component{
                                                 </div>
                                             }
                                             footer={
-                                                <Button color="primary">Update Profile</Button>
+                                                <Button color="primary">Post</Button>
                                             }
                                         />
 
                                         <RegularCard
-                                            cardTitle="Post 1"
+                                            cardTitle="Alec Thompson - Feb/12/2018"
                                             content={
                                                 <div>
                                                     <Grid container>
-                                                        <ItemGrid xs={12} sm={12} md={5}>
-                                                            <CustomInput
-                                                                labelText="Company (disabled)"
-                                                                id="company-disabled"
-                                                                formControlProps={{
-                                                                    fullWidth: true
-                                                                }}
-                                                                inputProps={{
-                                                                    disabled: true
-                                                                }}
-                                                            />
+                                                        <ItemGrid xs={12} sm={12} md={12}>
+                                                            <InputLabel style={{color: '#AAAAAA'}}>This is my second post!</InputLabel>
                                                         </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={3}>
-                                                            <CustomInput
-                                                                labelText="Username"
-                                                                id="username"
-                                                                formControlProps={{
-                                                                    fullWidth: true
-                                                                }}
-                                                            />
+                                                        <ItemGrid xs={12} sm={12} md={12}>
+                                                            <Button color="primary">Like</Button>
+                                                            <Button color="primary">Comment</Button>
                                                         </ItemGrid>
-                                                        <ItemGrid xs={12} sm={12} md={4}>
-                                                            <CustomInput
-                                                                labelText="Email address"
-                                                                id="email-address"
-                                                                formControlProps={{
-                                                                    fullWidth: true
-                                                                }}
-                                                            />
+                                                    </Grid>
+                                                </div>
+                                            }
+                                        />
+
+                                        <RegularCard
+                                            cardTitle="Alec Thompson - Feb/10/2018"
+                                            content={
+                                                <div>
+                                                    <Grid container>
+                                                        <ItemGrid xs={12} sm={12} md={12}>
+                                                            <InputLabel style={{color: '#AAAAAA'}}>This is my first post!</InputLabel>
+                                                        </ItemGrid>
+                                                        <ItemGrid xs={12} sm={12} md={12}>
+                                                            <Button color="primary">Like</Button>
+                                                            <Button color="primary">Comment</Button>
                                                         </ItemGrid>
                                                     </Grid>
                                                 </div>
